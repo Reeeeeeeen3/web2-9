@@ -6,11 +6,25 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type"text/javascript">
     $(function(){
-      $("p").css("color","red");
-      });
+      $("button").css({
+        'display': 'inline-block',
+        'padding':'0.5em 1em',
+        'text-decoration': 'none',
+        'background': '#668ad8',
+        'color': '#FFF',
+        'border-bottom': 'solid 4px #627295',
+        'border-radius': '3px'
+        });
+      $("button:active").css({
+        '-ms-transform': 'translateY(4px)',
+        '-webkit-transform': 'translateY(4px)',
+        'transform': 'translateY(4px)',
+        'border-bottom': 'none'
+        });
+    });
       </script>
 </head>
 <body>
-  <p>テスト</p>
+  <button id="toggle">押してみて！</button>
 </body>
 </html>
