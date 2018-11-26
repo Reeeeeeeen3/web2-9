@@ -24,10 +24,14 @@
         'transform': 'translateY(4px)',
         'border-bottom': 'none'
         });
+      $(#toggle").on("click", function(){
+        $("#target").show("slow");
+      });
     });
       </script>
 </head>
 <body>
   <div><button id="toggle">押してみて！</button></div>
+  <div id="target">押しましたね？</div>
 </body>
 </html>
