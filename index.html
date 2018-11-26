@@ -25,7 +25,11 @@
         'border-bottom': 'none'
         });
       $("#toggle").on("click", function(){
-        $("#target").show("slow");
+        if ($("#target:first").is("hidden")){
+          $("#target").slideDown("slow");
+        }else{
+          $("#target").hide();
+        }
       });
     });
       </script>
