@@ -24,8 +24,8 @@
         'transform': 'translateY(4px)',
         'border-bottom': 'none'
         });
-      $("#toggle").on("click", function(){
-        if ($("#target:first").is("hidden")){
+      $("#toggle").click(function(){
+        if ($("#target:first").is(":hidden")){
           $("#target").slideDown("slow");
         }else{
           $("#target").hide();
